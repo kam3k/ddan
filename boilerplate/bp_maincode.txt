@@ -18,7 +18,7 @@ if [[ -n $windowIDs ]]; then
 	done
 	#ELSE, bring onto front any one window from the windowIDs array
 	echo "Gonna bring the window for you"
-	wmctrl -ia ${windowIDs[0]}
+	wmctrl -iR ${windowIDs[0]}
 else 
 	$appCommand &
 fi; 
